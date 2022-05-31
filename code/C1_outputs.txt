@@ -1,0 +1,10 @@
+I HAVE AN I20N
+Test data output =  MAHEN
+ and JUSTYN SAMUEL MAHEN
+
+Numerics Identified: ['4', '9', '1', '1', '2']
+Your number: 10 is a valid number
+Your number: 7 is a valid number
+i have an in
+testdata output = i want to watch blade runner 
+
