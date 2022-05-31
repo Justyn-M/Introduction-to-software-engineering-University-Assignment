@@ -1,6 +1,7 @@
 #
 # Category1.py - code for category 1
 #
+
 from string import digits
 
 # Converting a given string to uppercase or lowercase
@@ -155,4 +156,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
