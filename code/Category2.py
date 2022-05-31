@@ -23,9 +23,12 @@ def Hours2Mins():
                 min2 = 60 * int(col[2])
                 min3 = 60 * int(col[3])
     print('\nMinutes =\n', min1,',', min2,',', min3)
-    with open('C2_output.csv') as out:
-        printer = csv.append()
-        print('Minutes =', mins, min1, min2, min3, file = out)
+
+    csvMin = ['Minutes =', min1, min2, min3]
+    w = open('C2_output.csv', 'w')
+    writer = csv.writer(w)
+    writer.writerow(csvMin)
+    w.close()
 
 def Mins2Secs():
     print('\n#### Minutes to Seconds Convertor ####\n')
@@ -46,9 +49,12 @@ def Mins2Secs():
                 sec2 = 60 * int(col[2])
                 sec3 = 60 * int(col[3])
     print('\nSeconds =\n', sec1,',', sec2,',', sec3)
-    with open('C2_output.csv') as out:
-        print('Seconds =', secs, sec1, sec2, sec3, file = out)
-
+    
+    csvSec = ['Seconds =', sec1, sec2, sec3]
+    w = open('C2_output.csv', 'w')
+    writer = csv.writer(w)
+    writer.writerow(csvSec)
+    w.close()
 
 def Mins2Hours():
     print('\n#### Minutes to Hours Convertor ####\n')
@@ -69,8 +75,12 @@ def Mins2Hours():
                 hour2 = int(col[2])/60
                 hour3 = int(col[3])/60
     print('\nHours` =\n', hour1,',', hour2,',', hour3)
-    with open('C2_output.csv') as out:
-        print('Hours =', hours, hour1, hour2, hour3, file = out)
+    
+    csvHour = ['Minutes =', hour1, hour2, hour3]
+    w = open('C2_output.csv', 'w')
+    writer = csv.writer(w)
+    writer.writerow(csvHour)
+    w.close()
 
 def Secs2Mins():
     print('\n#### Seconds to Minutes Convertor ####\n')
@@ -91,8 +101,12 @@ def Secs2Mins():
                 min2 = int(col[2])/60
                 min3 = int(col[3])/60
     print('\nMinutes =\n', min1,',', min2,',', min3)
-    with open('C2_output.csv') as out:
-        print('Minutes =', mins, min1, min2, min3, file = out)
+    
+    csvMin = ['Minutes =', min1, min2, min3]
+    w = open('C2_output.csv', 'w')
+    writer = csv.writer(w)
+    writer.writerow(csvMin)
+    w.close()
 
 def TimeConverter():
     print('\n#### Time Converter ####\n')
@@ -124,8 +138,7 @@ def TimeConverter():
     else:
         print('\nInvalid Input\n')
         print('Please Try again')
-    with open('C2_output.csv') as out:
-        print('Minutes =', mins, secs, hours, mins, file = out)
+
 
 def main():
     Hours2Mins()

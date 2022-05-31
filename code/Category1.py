@@ -47,6 +47,7 @@ def CaseConverter():
 
 def NumericIdentifier():
     print('\n#### Numeric Identifier ####\n')
+# Using list comprehensions
     testdata = open('testdata.txt')
     readData = testdata.readlines()
     numerics = []
@@ -58,10 +59,12 @@ def NumericIdentifier():
     if not numerics:
         print('There are no numerics in your text')
     else:
+# Writing to output file
         with open('C1_outputs.txt', 'a') as out:
             print('Numerics Identified:', numerics, file = out)
         print('Numerics Identified:', numerics)
 
+# Reading from input file
     print('\nReading test data from txt file...\n')
     extractedData = readData[2]
     for no in extractedData:
@@ -70,6 +73,7 @@ def NumericIdentifier():
     if not testNumerics:
         print('There are no numerics in the test data text')
     else:
+# Writing to output file
         with open('C1_outputs.txt', 'a') as out:
             print('Numerics Identified:', testNumerics, file = out)
         print('Numerics Identified:', testNumerics)
@@ -94,6 +98,7 @@ def NumericValidator():
             print('Your number:', number, 'is a valid number', file = out)
         print('Your number', number, 'is a valid number')
 
+# Reading fron input file
     print('\nReading testdata from txt file...\n')
     numberdata = int(readData[3])
     if 0 > numberdata < 10:
@@ -112,11 +117,12 @@ def NumericValidator():
 
 def NumericRemover():
     print('\n#### Numeric Remover ####\n')
+# Reading from input file
     testdata = open('testdata.txt')
     readData = testdata.readlines()
     textstring = input('Enter your text: ')
     extractedData = readData[4]
-
+# Making No Number text formats
     no_num = str.maketrans('', '', digits)
     no_num_textstring = textstring.translate(no_num)
     no_num_exD = extractedData.translate(no_num)
