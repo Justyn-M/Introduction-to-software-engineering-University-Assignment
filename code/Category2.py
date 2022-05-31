@@ -8,10 +8,12 @@ import csv
 def Hours2Mins():
     print('\n#### Hours to Minutes Convertor ####\n')
     hours = int(input('Enter the number of hours: '))
-    print('\nConverting Hours to Minutes....\n')
-    mins = 60 * hours
-    print('\nMinutes =\n', mins)
-
+    if hours < 0:
+        print('Invalid number of hours')
+    else:
+        print('\nConverting Hours to Minutes....\n')
+        mins = 60 * hours
+        print('\nMinutes =\n', mins)
     print('\nCalculating minutes from input data in csv file...\n')
     with open('testdata.csv', newline = '') as t:
         reader = csv.reader(t)
@@ -28,9 +30,12 @@ def Hours2Mins():
 def Mins2Secs():
     print('\n#### Minutes to Seconds Convertor ####\n')
     mins = int(input('Enter the number of minutes: '))
-    print('\nConverting Minutess to Seconds....\n')
-    secs = 60 * mins
-    print('\nSeconds =\n', secs)
+    if mins < 0:
+        print('Invalid number of minutes')
+    else:
+        print('\nConverting Minutess to Seconds....\n')
+        ecs = 60 * mins
+        print('\nSeconds =\n', secs)
 
     print('\nCalculating seconds from input data in csv file...\n')
     with open('testdata.csv', newline = '') as t:
@@ -48,9 +53,12 @@ def Mins2Secs():
 def Mins2Hours():
     print('\n#### Minutes to Hours Convertor ####\n')
     mins = int(input('Enter the number of minutes: '))
-    print('\nConverting Minutess to Hours....\n')
-    hours = mins/60
-    print('\nHours =\n', hours)
+    if mins < 0:
+        print('Invalid number of minutes')
+    else:
+        print('\nConverting Minutess to Hours....\n')
+        hours = mins/60
+        print('\nHours =\n', hours)
 
     print('\nCalculating hours from input data in csv file...\n')
     with open('testdata.csv', newline = '') as t:
@@ -67,9 +75,12 @@ def Mins2Hours():
 def Secs2Mins():
     print('\n#### Seconds to Minutes Convertor ####\n')
     secs = int(input('Enter the number of seconds: '))
-    print('\nConverting Seconds to Minutes....\n')
-    mins = secs/60
-    print('\nMinutes =\n',mins)
+    if secs < 0:
+        print('Invalid number of seconds')
+    else:
+        print('\nConverting Seconds to Minutes....\n')
+        mins = secs/60
+        print('\nMinutes =\n',mins)
 
     print('\nCalculating minutes from input data in csv file...\n')
     with open('testdata.csv', newline = '') as t:

@@ -99,7 +99,7 @@ def NumericValidator():
     if 0 > numberdata < 10:
             numberdata == False
             with open('C1_outputs.txt', 'a') as out:
-                print('Your number:', numberdata, 'is a valid number', file = out)
+                print('Invalid Number:', numberdata, file = out)
             print('Invalid Number')
     else:
         numberdata == True
