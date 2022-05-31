@@ -37,7 +37,7 @@ def Mins2Secs():
         print('Invalid number of minutes')
     else:
         print('\nConverting Minutess to Seconds....\n')
-        ecs = 60 * mins
+        secs = 60 * mins
         print('\nSeconds =\n', secs)
 
     print('\nCalculating seconds from input data in csv file...\n')
