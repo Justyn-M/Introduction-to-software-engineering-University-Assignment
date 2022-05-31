@@ -127,9 +127,12 @@ def TimeConverter():
     with open('C2_output.csv') as out:
         print('Minutes =', mins, secs, hours, mins, file = out)
 
-Hours2Mins()
-Mins2Secs()
-Mins2Hours()
-Secs2Mins()
-TimeConverter()
+def main():
+    Hours2Mins()
+    Mins2Secs()
+    Mins2Hours()
+    Secs2Mins()
+    TimeConverter()
 
+if __name__ == '__main__':
+    main()

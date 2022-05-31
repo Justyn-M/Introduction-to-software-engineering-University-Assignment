@@ -141,9 +141,12 @@ def NumericRemover():
     else:
         print('Invalid Selection')
 
-CaseConverter()
-NumericIdentifier()
-NumericValidator()
-NumericRemover()
+def main():
+    CaseConverter()
+    NumericIdentifier()
+    NumericValidator()
+    NumericRemover()
 
+if __name__ == '__main__':
+    main()
 
