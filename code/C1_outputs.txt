@@ -1,10 +1,16 @@
-I HAVE AN I20N
+I AM A STUDENT
+Test data output =  MAHEN
+ and JUSTYN SAMUEL MAHEN
+
+Numerics Identified: ['2', '0']
+Numerics Identified: ['4', '9', '1', '1', '2']
+Valid Number: 3
+Valid Number: 7
+MY STUDENT NUMBER IS 
+testdata output = I WANT TO WATCH BLADE RUNNER 
+
+HI
 Test data output =  MAHEN
  and JUSTYN SAMUEL MAHEN
 
 Numerics Identified: ['4', '9', '1', '1', '2']
-Your number: 10 is a valid number
-Your number: 7 is a valid number
-i have an in
-testdata output = i want to watch blade runner 
-

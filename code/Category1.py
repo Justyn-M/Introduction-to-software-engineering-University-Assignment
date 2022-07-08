@@ -88,30 +88,30 @@ def NumericValidator():
     readData = testdata.readlines()
     print('Enter a number from 0-10')
     number = int(input())
-    if 0 > number < 10:
-            number == False
+    if 0 < number < 10:
+            number == True
             with open('C1_outputs.txt', 'a') as out:
-                print('Invalid Number:', number, file = out)
-            print('Invalid Number')
+                print('Valid Number:', number, file = out)
+            print('Valid Number')
     else:
-        number == True
+        number == False
         with open('C1_outputs.txt', 'a') as out:
-            print('Your number:', number, 'is a valid number', file = out)
-        print('Your number', number, 'is a valid number')
+            print('Your number:', number, 'is an invalid number', file = out)
+        print('Your number', number, 'is an invalid number')
 
 # Reading fron input file
     print('\nReading testdata from txt file...\n')
     numberdata = int(readData[3])
-    if 0 > numberdata < 10:
-            numberdata == False
+    if 0 < numberdata < 10:
+            numberdata == True
             with open('C1_outputs.txt', 'a') as out:
-                print('Invalid Number:', numberdata, file = out)
-            print('Invalid Number')
+                print('Valid Number:', numberdata, file = out)
+            print('Valid Number')
     else:
-        numberdata == True
+        numberdata == False
         with open('C1_outputs.txt', 'a') as out:
-            print('Your number:', numberdata, 'is a valid number', file = out)
-        print('The number', numberdata, 'is a valid number')
+            print('Your number:', numberdata, 'is a invalid number', file = out)
+        print('The number', numberdata, 'is a invalid number')
     testdata.close()
 
 # Remove any numeric values in a given string then convert the string to upper or lowercase
